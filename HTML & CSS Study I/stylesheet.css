@@ -4,10 +4,6 @@ body {
 
 li {
   list-style: none;
-  /* Gantikan property float ke left */
-  float: left;
-  /* Ubahlah padding atas & bawah ke 33px, dan padding kiri & kanan ke 20px */
-  padding: 33px 20px 33px 20px;
 }
 
 .header {
@@ -16,12 +12,15 @@ li {
   height: 90px;
 }
 
-/* Gantikan font-size milik header-logo ke 36px, dan property float ke left */
-.header-logo{
-  font-size: 36px;
+.header-logo {
   float: left;
-  /* Ubahlah padding atas & bawah ke 20px, dan padding kiri & kanan ke 40px */
-  padding: 20px 40px 20px 40px;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
 }
 
 .main {
@@ -30,6 +29,32 @@ li {
 }
 
 .footer {
-  background-color: #ceccf3;
-  height: 270px;
+  /* Gantikan background-color ke #2f5167 */
+  background-color: #2f5167;
+  
+  /* Gantikan color ke #fff */
+  color: #fff;
+  
+  /* Gantikan height ke 120px */
+  height: 120px;
+  
+  /* Gantikan padding untuk semua sisi ke 40px */
+  padding: 40px;
+  
+}
+
+/* Gantikan font-size dan property float footer-logo */
+.footer-logo{
+  font-size:32px;
+  float:left;
+}
+
+/* Gantikan float property footer-list */
+.footer-list{
+  float:right;
+}
+
+/* Tambahkan CSS untuk tag <li> kedalam footer-list */
+.footer-list li {
+  padding-bottom:20px;
 }
