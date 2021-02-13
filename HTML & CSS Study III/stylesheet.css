@@ -1,19 +1,7 @@
-/* h1 {
-  color: red;
+/* Terapkan box-sizing: border-box; kesemua element */
+* {
+  box-sizing: border-box;
 }
-
-@media (max-width: 1000px) {
-  h1{
-    color:blue;
-  }
-}
-
-@media (max-width: 670px) {
-
-  h1{
-    color:green;
-  }
-} */
 
 .container {
   margin: 20px;
@@ -22,6 +10,8 @@
 .item {
   width: 25%;
   float: left;
+  /* Ubah padding kiri & kanan ke 15px*/
+  padding: 0 15px 0 15px;
 }
 
 .item-box {
@@ -46,18 +36,14 @@
 }
 
 /* Untuk Tablet */
-/* Tambahkan breakpoint max-width: 1000px */
 @media (max-width: 1000px) {
-  /* Gantikan warna <h1> ke blue */
   .item {
     width: 50%;
   }
 }
 
 /* Untuk Smartphone */
-/* Tambahkan breakpoint max-width: 670px */
 @media (max-width: 670px) {
-  /* Gantikan warna <h1> ke blue */
   .item {
     width: 100%;
   }
